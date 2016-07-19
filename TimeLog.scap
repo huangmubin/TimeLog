@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ScappleDocument Version="1.1" ID="76A4DF91-4D9E-4368-8C63-864D4E3E92A9">
+    <Notes>
+        <Note ID="0" FontSize="12.0" Position="252.929688,107.222656" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>计划列表</String>
+            <ConnectedNoteIDs>1-4, 8-9</ConnectedNoteIDs>
+        </Note>
+        <Note ID="1" FontSize="12.0" Position="93.875,107.820312" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>程序入口</String>
+            <ConnectedNoteIDs>0, 10</ConnectedNoteIDs>
+        </Note>
+        <Note ID="2" FontSize="12.0" Position="485.222656,387.335938" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>计划明细</String>
+            <ConnectedNoteIDs>0, 9</ConnectedNoteIDs>
+        </Note>
+        <Note ID="3" FontSize="12.0" Position="258.511719,415.207031" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>时间分析</String>
+            <ConnectedNoteIDs>0, 9</ConnectedNoteIDs>
+        </Note>
+        <Note ID="4" FontSize="12.0" Position="487.195312,44.335938" Width="44.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>计时器</String>
+            <ConnectedNoteIDs>0, 40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="254.847656,141.652344" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>显示计划</String>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="254.847656,172.652344" Width="104.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>显示计划当日时长</String>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="254.847656,203.652344" Width="116.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>显示计划总完成程度</String>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="44.5,290.140625" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>计划编辑</String>
+            <ConnectedNoteIDs>0</ConnectedNoteIDs>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="665.707031,189.617188" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>明细编辑</String>
+            <ConnectedNoteIDs>0, 2-3, 40</ConnectedNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="44.417969,321.335938" Width="104.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>新增以及编辑计划</String>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="668.265625,221.347656" Width="128.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>新增以及编辑明细记录</String>
+        </Note>
+        <Note ID="14" FontSize="12.0" Position="487.597656,75.585938" Width="44.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>倒计时</String>
+        </Note>
+        <Note ID="15" FontSize="12.0" Position="487.597656,106.585938" Width="44.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>正计时</String>
+        </Note>
+        <Note ID="18" FontSize="12.0" Position="668.265625,252.347656" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>备注</String>
+        </Note>
+        <Note ID="19" FontSize="12.0" Position="668.265625,283.347656" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>开始时间</String>
+        </Note>
+        <Note ID="20" FontSize="12.0" Position="668.265625,314.347656" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>结束时间</String>
+        </Note>
+        <Note ID="21" FontSize="12.0" Position="44.417969,352.335938" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>名字</String>
+        </Note>
+        <Note ID="22" FontSize="12.0" Position="44.417969,383.335938" Width="32.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>备注</String>
+        </Note>
+        <Note ID="23" FontSize="12.0" Position="259.359375,443.84375" Width="104.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>查看某日时间分布</String>
+        </Note>
+        <Note ID="25" FontSize="12.0" Position="484.902344,418.042969" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>查看项目趋势</String>
+        </Note>
+        <Note ID="26" FontSize="12.0" Position="484.902344,449.042969" Width="80.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>查看明细列表</String>
+        </Note>
+        <Note ID="27" FontSize="12.0" Position="484.902344,480.042969" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>编辑明细</String>
+        </Note>
+        <Note ID="28" FontSize="12.0" Position="484.902344,511.042969" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>添加明细</String>
+        </Note>
+        <Note ID="29" FontSize="12.0" Position="259.375,475.164062" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>添加明细</String>
+        </Note>
+        <Note ID="30" FontSize="12.0" Position="259.375,506.164062" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>编辑明细</String>
+        </Note>
+        <Note ID="31" FontSize="12.0" Position="254.582031,234.472656" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>添加计划</String>
+        </Note>
+        <Note ID="32" FontSize="12.0" Position="254.582031,265.472656" Width="56.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>编辑计划</String>
+        </Note>
+        <Note ID="40" FontSize="12.0" Position="626.652344,78.097656" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>计划选择器</String>
+            <ConnectedNoteIDs>4, 9</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes>
+        <Shape ID="41" Sticky="No" Position="24.125,22.0" Width="793.0" Height="541.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="33" Sticky="No" Position="242.582031,92.472656" Width="138.0" Height="215.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="10" Sticky="No" Position="84.125,93.0" Width="76.0" Height="57.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+            <ConnectedNoteIDs>1</ConnectedNoteIDs>
+        </Shape>
+        <Shape ID="37" Sticky="No" Position="474.902344,372.042969" Width="100.0" Height="181.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="35" Sticky="No" Position="249.375,398.164062" Width="124.0" Height="150.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="38" Sticky="No" Position="477.027344,29.738281" Width="77.0" Height="111.265625">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="39" Sticky="No" Position="34.097656,275.613281" Width="124.0" Height="150.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+        <Shape ID="36" Sticky="No" Position="656.722656,172.710938" Width="150.0" Height="184.0">
+            <Appearance>
+                <Border Weight="1"></Border>
+            </Appearance>
+        </Shape>
+    </BackgroundShapes>
+    <Stacks>
+        <Stack>2, 25-28</Stack>
+        <Stack>3, 23, 29-30</Stack>
+        <Stack>5-7, 31-32</Stack>
+        <Stack>11, 21-22</Stack>
+        <Stack>12, 18-20</Stack>
+        <Stack>14-15</Stack>
+    </Stacks>
+    <AutoFit>0-12, 14-15, 18-23, 25-33, 37, 39-40</AutoFit>
+    <NoteStyles>
+        <Style Name="Title Text" ID="45008D18-BC84-4F4E-9523-588B135605D5" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+        <Style Name="Red Text" ID="40EA9A07-53F2-41B5-80CD-EE182D15F833" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>1.0 0.0 0.0</TextColor>
+        </Style>
+        <Style Name="Brown Bubble" ID="5ADD8BDC-A280-4926-BC08-A6A2A6148D18" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.290055 0.1523 0.182215</BorderColor>
+            <FillColor>0.940019 0.892907 0.779716</FillColor>
+        </Style>
+        <Style Name="Yellow Bubble" ID="59ECF039-300B-45AF-A9B6-E0D7AB62E887" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.756763 0.785592 0.373258</BorderColor>
+            <FillColor>0.906773 0.910625 0.634363</FillColor>
+        </Style>
+        <Style Name="Green Bubble" ID="7B4B474D-763C-4B68-89BB-F0ACBA0A9F45" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.331867 0.609932 0.356197</BorderColor>
+            <FillColor>0.790123 0.882328 0.80198</FillColor>
+        </Style>
+        <Style Name="Blue Bubble" ID="5907C3EC-27FE-4909-B79B-D34BDB6BA1B5" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.477193 0.557066 0.76433</BorderColor>
+            <FillColor>0.840969 0.866828 0.925903</FillColor>
+        </Style>
+        <Style Name="Pink Bubble" ID="2F277E51-F466-42C2-8BD1-03EB7F361734" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.747881 0.366532 0.542813</BorderColor>
+            <FillColor>0.918452 0.807302 0.863467</FillColor>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999737 0.986332 0.931298</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="iso-a4" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
