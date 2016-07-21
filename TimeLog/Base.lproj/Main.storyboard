@@ -1,25 +1,340 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6Tr-Jo-Gh3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Plan Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="PlanController" customModule="TimeLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="181" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DT3-Uh-Lg6">
+                                <rect key="frame" x="0.0" y="464" width="320" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanListCell" rowHeight="181" id="Gsk-si-V2M" customClass="PlanListCell" customModule="TimeLog" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="181"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gsk-si-V2M" id="lkU-HQ-Lqp">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DT3-Uh-Lg6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="400" id="53M-3F-3Ey"/>
+                            <constraint firstAttribute="trailing" secondItem="DT3-Uh-Lg6" secondAttribute="trailing" id="9my-UO-a4o"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DT3-Uh-Lg6" secondAttribute="bottom" id="P4z-h0-AKf"/>
+                            <constraint firstItem="DT3-Uh-Lg6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iKt-2s-Rzh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7u7-z0-zX5">
+                        <barButtonItem key="leftBarButtonItem" image="Day_White" id="PbR-1D-k4J"/>
+                        <barButtonItem key="rightBarButtonItem" image="AddPlan_White" id="MRz-Yx-jap">
+                            <connections>
+                                <action selector="addPlanAction:" destination="BYZ-38-t0r" id="dz9-bg-eeh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="m72-J8-9Rf" kind="show" identifier="PlanEditor" id="ObJ-mG-6bV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="857" y="400"/>
+        </scene>
+        <!--Plan Editor Controller-->
+        <scene sceneID="XTs-89-fZ2">
+            <objects>
+                <viewController id="m72-J8-9Rf" customClass="PlanEditorController" customModule="TimeLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gza-2p-yV7"/>
+                        <viewControllerLayoutGuide type="bottom" id="XAD-Ck-Qak"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NH7-4m-GNk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSx-Wl-SYP" customClass="View" customModule="TimeLog" customModuleProvider="target">
+                                <rect key="frame" x="16" y="84" width="288" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Plan Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-u0-7xz">
+                                        <rect key="frame" x="8" y="11" width="272" height="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldChangedAction:" destination="m72-J8-9Rf" eventType="editingChanged" id="njt-mn-gaA"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4CO-u0-7xz" firstAttribute="centerY" secondItem="gSx-Wl-SYP" secondAttribute="centerY" id="ZRW-dF-cSI"/>
+                                    <constraint firstAttribute="trailing" secondItem="4CO-u0-7xz" secondAttribute="trailing" constant="8" id="e9W-5I-MSN"/>
+                                    <constraint firstAttribute="height" constant="44" id="ltW-ac-VMe"/>
+                                    <constraint firstItem="4CO-u0-7xz" firstAttribute="leading" secondItem="gSx-Wl-SYP" secondAttribute="leading" constant="8" id="qHy-Pr-QOG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="opacity">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="offsetW">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="offsetH">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7w-IL-jEL" customClass="Button" customModule="TimeLog" customModuleProvider="target">
+                                <rect key="frame" x="16" y="136" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jx6-o2-hpC"/>
+                                </constraints>
+                                <state key="normal" title="  计划坚持   10 天"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="note" value="Day"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="timeChoicerActions:" destination="m72-J8-9Rf" eventType="touchUpInside" id="tPy-TH-qqc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More_White" translatesAutoresizingMaskIntoConstraints="NO" id="o1I-1u-CcO">
+                                <rect key="frame" x="260" y="136" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o1I-1u-CcO" secondAttribute="height" id="G4X-wf-tG6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ld-vi-Iwd" customClass="Button" customModule="TimeLog" customModuleProvider="target">
+                                <rect key="frame" x="16" y="188" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jDi-eT-t1a"/>
+                                </constraints>
+                                <state key="normal" title="  每天投入  60 分钟"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="note" value="Time"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="timeChoicerActions:" destination="m72-J8-9Rf" eventType="touchUpInside" id="51N-xu-YMH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="More_White" translatesAutoresizingMaskIntoConstraints="NO" id="2Fk-cY-fq7">
+                                <rect key="frame" x="260" y="188" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Fk-cY-fq7" secondAttribute="height" id="bdH-e3-JgJ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQU-7O-JHS" customClass="View" customModule="TimeLog" customModuleProvider="target">
+                                <rect key="frame" x="16" y="240" width="288" height="100"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z4b-la-lX1" customClass="TextView" customModule="TimeLog" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="8" width="272" height="84"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="给计划写个备注，留给以后的自己。"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="z4b-la-lX1" firstAttribute="top" secondItem="RQU-7O-JHS" secondAttribute="top" constant="8" id="PMW-0Y-7gz"/>
+                                    <constraint firstAttribute="trailing" secondItem="z4b-la-lX1" secondAttribute="trailing" constant="8" id="UrC-qM-Zra"/>
+                                    <constraint firstAttribute="height" constant="100" id="e6P-wM-Ud4"/>
+                                    <constraint firstAttribute="bottom" secondItem="z4b-la-lX1" secondAttribute="bottom" constant="8" id="yib-AZ-sai"/>
+                                    <constraint firstItem="z4b-la-lX1" firstAttribute="leading" secondItem="RQU-7O-JHS" secondAttribute="leading" constant="8" id="zcQ-p7-fHF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-bu-d0f" customClass="Button" customModule="TimeLog" customModuleProvider="target">
+                                <rect key="frame" x="16" y="348" width="288" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4NS-tm-SL6"/>
+                                </constraints>
+                                <state key="normal" image="Delete_White"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteAction:" destination="m72-J8-9Rf" eventType="touchUpInside" id="iI1-oM-BiJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RQU-7O-JHS" firstAttribute="leading" secondItem="5ld-vi-Iwd" secondAttribute="leading" id="32d-tE-wSr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gSx-Wl-SYP" secondAttribute="trailing" id="5mS-Y5-A2C"/>
+                            <constraint firstItem="n7w-IL-jEL" firstAttribute="top" secondItem="gSx-Wl-SYP" secondAttribute="bottom" constant="8" id="8pC-2d-WiW"/>
+                            <constraint firstItem="5ld-vi-Iwd" firstAttribute="trailing" secondItem="n7w-IL-jEL" secondAttribute="trailing" id="8ru-Kk-3a3"/>
+                            <constraint firstItem="5ld-vi-Iwd" firstAttribute="trailing" secondItem="2Fk-cY-fq7" secondAttribute="trailing" id="8t3-d9-2MT"/>
+                            <constraint firstItem="rVX-bu-d0f" firstAttribute="leading" secondItem="RQU-7O-JHS" secondAttribute="leading" id="D7S-hZ-9td"/>
+                            <constraint firstItem="o1I-1u-CcO" firstAttribute="bottom" secondItem="n7w-IL-jEL" secondAttribute="bottom" id="G4j-4L-HAj"/>
+                            <constraint firstItem="2Fk-cY-fq7" firstAttribute="bottom" secondItem="5ld-vi-Iwd" secondAttribute="bottom" id="ORD-Ay-5ul"/>
+                            <constraint firstItem="5ld-vi-Iwd" firstAttribute="top" secondItem="n7w-IL-jEL" secondAttribute="bottom" constant="8" id="Vgu-co-lbr"/>
+                            <constraint firstItem="o1I-1u-CcO" firstAttribute="top" secondItem="n7w-IL-jEL" secondAttribute="top" id="XHv-Qi-KQ2"/>
+                            <constraint firstItem="n7w-IL-jEL" firstAttribute="trailing" secondItem="o1I-1u-CcO" secondAttribute="trailing" id="Y0u-uz-mbd"/>
+                            <constraint firstItem="RQU-7O-JHS" firstAttribute="trailing" secondItem="5ld-vi-Iwd" secondAttribute="trailing" id="gad-m1-Dxa"/>
+                            <constraint firstItem="n7w-IL-jEL" firstAttribute="leading" secondItem="gSx-Wl-SYP" secondAttribute="leading" id="gio-OS-0G0"/>
+                            <constraint firstItem="gSx-Wl-SYP" firstAttribute="top" secondItem="gza-2p-yV7" secondAttribute="bottom" constant="20" id="hDv-in-gdY"/>
+                            <constraint firstItem="rVX-bu-d0f" firstAttribute="trailing" secondItem="RQU-7O-JHS" secondAttribute="trailing" id="idg-kv-XpB"/>
+                            <constraint firstItem="RQU-7O-JHS" firstAttribute="top" secondItem="5ld-vi-Iwd" secondAttribute="bottom" constant="8" id="ilg-KK-b8H"/>
+                            <constraint firstItem="rVX-bu-d0f" firstAttribute="top" secondItem="RQU-7O-JHS" secondAttribute="bottom" constant="8" id="m5I-lb-nwa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="gSx-Wl-SYP" secondAttribute="leading" id="pbh-7w-mZ5"/>
+                            <constraint firstItem="n7w-IL-jEL" firstAttribute="trailing" secondItem="gSx-Wl-SYP" secondAttribute="trailing" id="tRn-IR-2nw"/>
+                            <constraint firstItem="2Fk-cY-fq7" firstAttribute="top" secondItem="5ld-vi-Iwd" secondAttribute="top" id="trj-8f-YQs"/>
+                            <constraint firstItem="5ld-vi-Iwd" firstAttribute="leading" secondItem="n7w-IL-jEL" secondAttribute="leading" id="zBu-Xu-Uao"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U8Y-Da-c8t">
+                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="HQn-LX-Kpd"/>
+                        <barButtonItem key="rightBarButtonItem" image="Sure_White" id="lkf-0I-6Vj"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="dayButton" destination="n7w-IL-jEL" id="ac6-OG-LAT"/>
+                        <outlet property="deleteButton" destination="rVX-bu-d0f" id="eT8-Ri-0cA"/>
+                        <outlet property="saveButton" destination="lkf-0I-6Vj" id="Rqj-Sa-FU7"/>
+                        <outlet property="textField" destination="4CO-u0-7xz" id="vqy-vh-QB2"/>
+                        <outlet property="textView" destination="z4b-la-lX1" id="M79-y0-uqP"/>
+                        <outlet property="timeButton" destination="5ld-vi-Iwd" id="KeR-vP-Uej"/>
+                        <outlet property="topLayout" destination="hDv-in-gdY" id="SBD-li-6pU"/>
+                        <segue destination="3eB-CL-riC" kind="show" identifier="PlanTimeChoicer" id="t0z-q5-zjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9w-ZH-nDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="400"/>
+        </scene>
+        <!--Plan Time Choicer Controller-->
+        <scene sceneID="Xdo-dn-RTe">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="3eB-CL-riC" customClass="PlanTimeChoicerController" customModule="TimeLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2KV-7a-bCr"/>
+                        <viewControllerLayoutGuide type="bottom" id="npR-I4-Ui0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B0T-fy-54j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-y1-F3z">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanTimeChoicerCell" textLabel="PZi-Cr-3At" style="IBUITableViewCellStyleDefault" id="vQ6-QY-f2b">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vQ6-QY-f2b" id="jDt-3J-wUl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PZi-Cr-3At">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hWm-y1-F3z" secondAttribute="trailing" id="8eK-y7-j5m"/>
+                            <constraint firstItem="hWm-y1-F3z" firstAttribute="leading" secondItem="B0T-fy-54j" secondAttribute="leading" id="apQ-8u-V1I"/>
+                            <constraint firstItem="npR-I4-Ui0" firstAttribute="top" secondItem="hWm-y1-F3z" secondAttribute="bottom" id="nMk-hc-MYS"/>
+                            <constraint firstItem="hWm-y1-F3z" firstAttribute="top" secondItem="2KV-7a-bCr" secondAttribute="bottom" id="ye2-Kx-5ve"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bgf-mV-9FK">
+                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="XqX-pX-uob"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzz-XZ-b3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815" y="400"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0uh-hz-rhN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Tr-Jo-Gh3" customClass="NavigationController" customModule="TimeLog" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="ZbH-m6-4tW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a5w-SM-UBD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5lX-5Q-IR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="400"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AddPlan_White" width="30" height="31"/>
+        <image name="Back_White" width="30" height="30"/>
+        <image name="Day_White" width="30" height="30"/>
+        <image name="Delete_White" width="30" height="30"/>
+        <image name="More_White" width="30" height="30"/>
+        <image name="Sure_White" width="30" height="30"/>
+    </resources>
 </document>

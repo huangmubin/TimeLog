@@ -8,22 +8,58 @@
 
 /* Begin PBXBuildFile section */
 		9CAEB7181D3E5AAD00CAC5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAEB7171D3E5AAD00CAC5F9 /* AppDelegate.swift */; };
-		9CAEB71A1D3E5AAD00CAC5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAEB7191D3E5AAD00CAC5F9 /* ViewController.swift */; };
 		9CAEB71D1D3E5AAD00CAC5F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAEB71B1D3E5AAD00CAC5F9 /* Main.storyboard */; };
 		9CAEB7201D3E5AAD00CAC5F9 /* TimeLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CAEB71E1D3E5AAD00CAC5F9 /* TimeLog.xcdatamodeld */; };
 		9CAEB7221D3E5AAD00CAC5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAEB7211D3E5AAD00CAC5F9 /* Assets.xcassets */; };
 		9CAEB7251D3E5AAD00CAC5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAEB7231D3E5AAD00CAC5F9 /* LaunchScreen.storyboard */; };
+		B1356F391D4060CD00408130 /* Plan+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F351D4060CD00408130 /* Plan+CoreDataProperties.swift */; };
+		B1356F3A1D4060CD00408130 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F361D4060CD00408130 /* Plan.swift */; };
+		B1356F3B1D4060CD00408130 /* Log+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F371D4060CD00408130 /* Log+CoreDataProperties.swift */; };
+		B1356F3C1D4060CD00408130 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F381D4060CD00408130 /* Log.swift */; };
+		B1356F401D40616100408130 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F3D1D40616100408130 /* Clock.swift */; };
+		B1356F411D40616100408130 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F3E1D40616100408130 /* CoreData.swift */; };
+		B1356F421D40616100408130 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F3F1D40616100408130 /* Drawer.swift */; };
+		B1356F441D4061B700408130 /* AppTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F431D4061B700408130 /* AppTint.swift */; };
+		B194B4821D40A75E00780687 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4811D40A75E00780687 /* NavigationController.swift */; };
+		B194B4841D40A81C00780687 /* PlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4831D40A81C00780687 /* PlanController.swift */; };
+		B194B4861D40A85900780687 /* PlanListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4851D40A85900780687 /* PlanListCell.swift */; };
+		B194B4881D40A87700780687 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4871D40A87700780687 /* View.swift */; };
+		B194B48A1D40A89600780687 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4891D40A89600780687 /* Button.swift */; };
+		B194B48C1D40B60A00780687 /* PlanEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B48B1D40B60A00780687 /* PlanEditorController.swift */; };
+		B194B48E1D40B63400780687 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B48D1D40B63400780687 /* AppData.swift */; };
+		B194B4911D40B93900780687 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B48F1D40B93900780687 /* TextField.swift */; };
+		B194B4921D40B93900780687 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4901D40B93900780687 /* TextView.swift */; };
+		B194B4941D40C90800780687 /* PlanTimeChoicerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4931D40C90800780687 /* PlanTimeChoicerController.swift */; };
+		B194B4961D40CBE000780687 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4951D40CBE000780687 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9CAEB7141D3E5AAD00CAC5F9 /* TimeLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CAEB7171D3E5AAD00CAC5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CAEB7191D3E5AAD00CAC5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CAEB71C1D3E5AAD00CAC5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CAEB71F1D3E5AAD00CAC5F9 /* TimeLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLog.xcdatamodel; sourceTree = "<group>"; };
 		9CAEB7211D3E5AAD00CAC5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CAEB7241D3E5AAD00CAC5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CAEB7261D3E5AAD00CAC5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1356F351D4060CD00408130 /* Plan+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plan+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1356F361D4060CD00408130 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		B1356F371D4060CD00408130 /* Log+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Log+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B1356F381D4060CD00408130 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		B1356F3D1D40616100408130 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		B1356F3E1D40616100408130 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		B1356F3F1D40616100408130 /* Drawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		B1356F431D4061B700408130 /* AppTint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTint.swift; sourceTree = "<group>"; };
+		B194B4811D40A75E00780687 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		B194B4831D40A81C00780687 /* PlanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanController.swift; sourceTree = "<group>"; };
+		B194B4851D40A85900780687 /* PlanListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanListCell.swift; sourceTree = "<group>"; };
+		B194B4871D40A87700780687 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B194B4891D40A89600780687 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		B194B48B1D40B60A00780687 /* PlanEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanEditorController.swift; sourceTree = "<group>"; };
+		B194B48D1D40B63400780687 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		B194B48F1D40B93900780687 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		B194B4901D40B93900780687 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		B194B4931D40C90800780687 /* PlanTimeChoicerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTimeChoicerController.swift; sourceTree = "<group>"; };
+		B194B4951D40CBE000780687 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +92,121 @@
 		9CAEB7161D3E5AAD00CAC5F9 /* TimeLog */ = {
 			isa = PBXGroup;
 			children = (
-				9CAEB7171D3E5AAD00CAC5F9 /* AppDelegate.swift */,
-				9CAEB7191D3E5AAD00CAC5F9 /* ViewController.swift */,
+				B1356F2E1D405FB100408130 /* Day */,
+				B1356F2F1D405FB100408130 /* Global */,
+				B1356F301D405FB100408130 /* InterfaceParts */,
+				B194B4801D40A73E00780687 /* Navigation */,
+				B1356F311D405FB100408130 /* Log */,
+				B1356F321D405FB100408130 /* Plan */,
+				B1356F331D405FB100408130 /* Protocols */,
+				B1356F341D405FB100408130 /* Tools */,
+				B1356F2D1D405E0900408130 /* AppDelegate */,
+				B1356F2C1D405E0900408130 /* Info */,
+				B1356F2B1D405E0800408130 /* Resources */,
+			);
+			path = TimeLog;
+			sourceTree = "<group>";
+		};
+		B1356F2B1D405E0800408130 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9CAEB71B1D3E5AAD00CAC5F9 /* Main.storyboard */,
 				9CAEB7211D3E5AAD00CAC5F9 /* Assets.xcassets */,
 				9CAEB7231D3E5AAD00CAC5F9 /* LaunchScreen.storyboard */,
-				9CAEB7261D3E5AAD00CAC5F9 /* Info.plist */,
 				9CAEB71E1D3E5AAD00CAC5F9 /* TimeLog.xcdatamodeld */,
 			);
-			path = TimeLog;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B1356F2C1D405E0900408130 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				9CAEB7261D3E5AAD00CAC5F9 /* Info.plist */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		B1356F2D1D405E0900408130 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9CAEB7171D3E5AAD00CAC5F9 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B1356F2E1D405FB100408130 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
+		B1356F2F1D405FB100408130 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B1356F361D4060CD00408130 /* Plan.swift */,
+				B1356F381D4060CD00408130 /* Log.swift */,
+				B1356F351D4060CD00408130 /* Plan+CoreDataProperties.swift */,
+				B1356F371D4060CD00408130 /* Log+CoreDataProperties.swift */,
+				B1356F431D4061B700408130 /* AppTint.swift */,
+				B194B48D1D40B63400780687 /* AppData.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B1356F301D405FB100408130 /* InterfaceParts */ = {
+			isa = PBXGroup;
+			children = (
+				B194B4871D40A87700780687 /* View.swift */,
+				B194B4891D40A89600780687 /* Button.swift */,
+				B194B48F1D40B93900780687 /* TextField.swift */,
+				B194B4901D40B93900780687 /* TextView.swift */,
+			);
+			path = InterfaceParts;
+			sourceTree = "<group>";
+		};
+		B1356F311D405FB100408130 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		B1356F321D405FB100408130 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				B194B4831D40A81C00780687 /* PlanController.swift */,
+				B194B4851D40A85900780687 /* PlanListCell.swift */,
+				B194B48B1D40B60A00780687 /* PlanEditorController.swift */,
+				B194B4931D40C90800780687 /* PlanTimeChoicerController.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		B1356F331D405FB100408130 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B1356F341D405FB100408130 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B1356F3D1D40616100408130 /* Clock.swift */,
+				B1356F3E1D40616100408130 /* CoreData.swift */,
+				B1356F3F1D40616100408130 /* Drawer.swift */,
+				B194B4951D40CBE000780687 /* Notification.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B194B4801D40A73E00780687 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B194B4811D40A75E00780687 /* NavigationController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +281,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAEB71A1D3E5AAD00CAC5F9 /* ViewController.swift in Sources */,
+				B194B4821D40A75E00780687 /* NavigationController.swift in Sources */,
+				B1356F3A1D4060CD00408130 /* Plan.swift in Sources */,
+				B194B4861D40A85900780687 /* PlanListCell.swift in Sources */,
+				B1356F3B1D4060CD00408130 /* Log+CoreDataProperties.swift in Sources */,
+				B1356F3C1D4060CD00408130 /* Log.swift in Sources */,
+				B1356F401D40616100408130 /* Clock.swift in Sources */,
+				B1356F441D4061B700408130 /* AppTint.swift in Sources */,
+				B1356F421D40616100408130 /* Drawer.swift in Sources */,
+				B1356F411D40616100408130 /* CoreData.swift in Sources */,
+				B194B4941D40C90800780687 /* PlanTimeChoicerController.swift in Sources */,
+				B1356F391D4060CD00408130 /* Plan+CoreDataProperties.swift in Sources */,
+				B194B48A1D40A89600780687 /* Button.swift in Sources */,
+				B194B48C1D40B60A00780687 /* PlanEditorController.swift in Sources */,
 				9CAEB7181D3E5AAD00CAC5F9 /* AppDelegate.swift in Sources */,
+				B194B48E1D40B63400780687 /* AppData.swift in Sources */,
+				B194B4841D40A81C00780687 /* PlanController.swift in Sources */,
+				B194B4911D40B93900780687 /* TextField.swift in Sources */,
+				B194B4961D40CBE000780687 /* Notification.swift in Sources */,
+				B194B4881D40A87700780687 /* View.swift in Sources */,
+				B194B4921D40B93900780687 /* TextView.swift in Sources */,
 				9CAEB7201D3E5AAD00CAC5F9 /* TimeLog.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +453,7 @@
 				9CAEB72B1D3E5AAD00CAC5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
