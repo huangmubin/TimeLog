@@ -141,7 +141,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="jDi-eT-t1a"/>
                                 </constraints>
-                                <state key="normal" title="  每天投入  60 分钟"/>
+                                <state key="normal" title="  每天投入  60 分钟 (1 小时)"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="corner">
                                         <real key="value" value="4"/>
@@ -173,6 +173,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="给计划写个备注，留给以后的自己。"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="m72-J8-9Rf" id="mM6-kT-qkh"/>
+                                        </connections>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,7 +195,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-bu-d0f" customClass="Button" customModule="TimeLog" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-bu-d0f" customClass="Button" customModule="TimeLog" customModuleProvider="target">
                                 <rect key="frame" x="16" y="348" width="288" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="4NS-tm-SL6"/>
@@ -212,6 +215,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="RQU-7O-JHS" firstAttribute="leading" secondItem="5ld-vi-Iwd" secondAttribute="leading" id="32d-tE-wSr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gSx-Wl-SYP" secondAttribute="trailing" id="5mS-Y5-A2C"/>
@@ -235,10 +239,22 @@
                             <constraint firstItem="2Fk-cY-fq7" firstAttribute="top" secondItem="5ld-vi-Iwd" secondAttribute="top" id="trj-8f-YQs"/>
                             <constraint firstItem="5ld-vi-Iwd" firstAttribute="leading" secondItem="n7w-IL-jEL" secondAttribute="leading" id="zBu-Xu-Uao"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Lpx-QB-dA1" appends="YES" id="ngI-mz-tRs"/>
+                            <outletCollection property="gestureRecognizers" destination="Uif-6W-Y07" appends="YES" id="D4W-RB-Z6j"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="U8Y-Da-c8t">
-                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="HQn-LX-Kpd"/>
-                        <barButtonItem key="rightBarButtonItem" image="Sure_White" id="lkf-0I-6Vj"/>
+                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="HQn-LX-Kpd">
+                            <connections>
+                                <action selector="backAction:" destination="m72-J8-9Rf" id="nPg-7q-UWe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="Sure_White" id="lkf-0I-6Vj">
+                            <connections>
+                                <action selector="saveAction:" destination="m72-J8-9Rf" id="7qc-XZ-l7w"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -253,6 +269,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9w-ZH-nDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Lpx-QB-dA1">
+                    <connections>
+                        <action selector="tapGestureAction:" destination="m72-J8-9Rf" id="clH-81-jkw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="Uif-6W-Y07">
+                    <connections>
+                        <action selector="swipeGestureAction:" destination="m72-J8-9Rf" id="ivU-Ee-RKv"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1368" y="400"/>
         </scene>
@@ -268,7 +294,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-y1-F3z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hWm-y1-F3z">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -276,11 +302,11 @@
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vQ6-QY-f2b" id="jDt-3J-wUl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PZi-Cr-3At">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -290,6 +316,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3eB-CL-riC" id="uRQ-mo-3U8"/>
+                                    <outlet property="delegate" destination="3eB-CL-riC" id="82S-uB-6WP"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -301,9 +331,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bgf-mV-9FK">
-                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="XqX-pX-uob"/>
+                        <barButtonItem key="leftBarButtonItem" image="Back_White" id="XqX-pX-uob">
+                            <connections>
+                                <action selector="backAction:" destination="3eB-CL-riC" id="e5C-Xv-aQ1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="hWm-y1-F3z" id="Sr4-qS-oty"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzz-XZ-b3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
