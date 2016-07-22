@@ -43,6 +43,7 @@ class PlanEditorController: UIViewController, UITextViewDelegate {
             day = plan!.day
             time = plan!.time
             textView.text = plan?.note
+            saveButton.enabled = true
         }
     }
     

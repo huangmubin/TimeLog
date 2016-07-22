@@ -20,6 +20,8 @@
 		B1356F411D40616100408130 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F3E1D40616100408130 /* CoreData.swift */; };
 		B1356F421D40616100408130 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F3F1D40616100408130 /* Drawer.swift */; };
 		B1356F441D4061B700408130 /* AppTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1356F431D4061B700408130 /* AppTint.swift */; };
+		B18949501D420A2E007CB5D0 /* LogEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189494F1D420A2E007CB5D0 /* LogEditorController.swift */; };
+		B18949521D420A50007CB5D0 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18949511D420A50007CB5D0 /* LogController.swift */; };
 		B194B4821D40A75E00780687 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4811D40A75E00780687 /* NavigationController.swift */; };
 		B194B4841D40A81C00780687 /* PlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4831D40A81C00780687 /* PlanController.swift */; };
 		B194B4861D40A85900780687 /* PlanListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B194B4851D40A85900780687 /* PlanListCell.swift */; };
@@ -49,6 +51,8 @@
 		B1356F3E1D40616100408130 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		B1356F3F1D40616100408130 /* Drawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 		B1356F431D4061B700408130 /* AppTint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTint.swift; sourceTree = "<group>"; };
+		B189494F1D420A2E007CB5D0 /* LogEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEditorController.swift; sourceTree = "<group>"; };
+		B18949511D420A50007CB5D0 /* LogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
 		B194B4811D40A75E00780687 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B194B4831D40A81C00780687 /* PlanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanController.swift; sourceTree = "<group>"; };
 		B194B4851D40A85900780687 /* PlanListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanListCell.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		B1356F311D405FB100408130 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				B18949511D420A50007CB5D0 /* LogController.swift */,
+				B189494F1D420A2E007CB5D0 /* LogEditorController.swift */,
 			);
 			path = Log;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				B194B4861D40A85900780687 /* PlanListCell.swift in Sources */,
 				B1356F3B1D4060CD00408130 /* Log+CoreDataProperties.swift in Sources */,
 				B1356F3C1D4060CD00408130 /* Log.swift in Sources */,
+				B18949501D420A2E007CB5D0 /* LogEditorController.swift in Sources */,
 				B1356F401D40616100408130 /* Clock.swift in Sources */,
 				B1356F441D4061B700408130 /* AppTint.swift in Sources */,
 				B1356F421D40616100408130 /* Drawer.swift in Sources */,
 				B1356F411D40616100408130 /* CoreData.swift in Sources */,
 				B194B4941D40C90800780687 /* PlanTimeChoicerController.swift in Sources */,
+				B18949521D420A50007CB5D0 /* LogController.swift in Sources */,
 				B1356F391D4060CD00408130 /* Plan+CoreDataProperties.swift in Sources */,
 				B194B48A1D40A89600780687 /* Button.swift in Sources */,
 				B194B48C1D40B60A00780687 /* PlanEditorController.swift in Sources */,

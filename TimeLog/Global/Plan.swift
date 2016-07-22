@@ -12,6 +12,7 @@ import CoreData
 
 class Plan: NSManagedObject {
 
-    
+    var today: Double = 0
+    var total: Double = 0
     
 }

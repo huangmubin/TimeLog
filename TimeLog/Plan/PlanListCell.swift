@@ -12,13 +12,25 @@ class PlanListCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        //backView.layer.masksToBounds = true
+        nameLabel.textColor = AppTint.fontColor().main
+        todayLabel.textColor = AppTint.fontColor().main
+        totalLabel.textColor = AppTint.fontColor().main
+        ratioLabel.textColor = AppTint.fontColor().main
     }
+    
+    @IBOutlet weak var backView: View!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var todayLabel: UILabel!
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var ratioLabel: UILabel!
+    
+    var indexPath: NSIndexPath!
+    var actions: ((String, NSIndexPath) -> Void)?
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func buttonActions(sender: Button) {
+        actions?(sender.note, indexPath)
     }
-
+    
+    
 }

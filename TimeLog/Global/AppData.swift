@@ -19,7 +19,16 @@ class AppData {
         let plan = CoreData.insert("Plan") as! Plan
         plan.createTime = NSDate().timeIntervalSince1970
         plan.id = String(format: "%.4f", plan.createTime)
+        Order.append(plan.id!)
+        orderSave()
         return plan
+    }
+    
+    class func insertLog(id: String, name: String) -> Log {
+        let log = CoreData.insert("Log") as! Log
+        log.id = id
+        log.name = name
+        return log
     }
     
     // MARK: - Delete
